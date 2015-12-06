@@ -1,0 +1,39 @@
+{
+  "name": "The War",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomekb82/AngularJS_TS_game"
+  },
+  "author": "TBE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomekb82/AngularJS_TS_game/issues"
+  },
+  "homepage": "https://github.com/tomekb82/AngularJS_TS_game",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-ui-router": "^0.2.15",
+    "gulp-sourcemaps": "^1.6.0",
+    "jquery": "^2.1.4",
+    "sockjs": "^0.3.15",
+    "body-parser": "^1.14.0",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-ng-html2js": "^0.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-less": "^3.0.5",
+    "gulp-typescript": "^2.9.0",
+    "gulp-uglify": "^1.4.1",
+    "http-proxy": "^1.11.2",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Game</h2>
+            <h3 class="section-subheading text-muted">Hello, {{tc.username}}!</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <button ng-click="tc.newTable()" ng-if="!tc.alreadyHasTable()" class="btn btn-xl">New Table</button>
+            <table class="tables">
+                <thead>
+                <tr>
+                    <th>Owner</th>
+                    <th>Players</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="table in tc.tables">
+                    <td>{{table.owner}}</td>
+                    <td>{{table.players}}</td>
+                    <td>
+                        <button ng-click="tc.play($index)">Play</button>
+                        <button ng-click="tc.join($index)" ng-if="!tc.alreadyJoined($index)">Join</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="center"/>
