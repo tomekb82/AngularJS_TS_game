@@ -27,11 +27,16 @@ module Poker {
         }
 
         dealHands() {
-            this.players.forEach((player) => {
-                player.giveCard(this.deck.popCard());
-                player.giveCard(this.deck.popCard());
-            });
-        }
+
+            var i:number, j:number;
+            for (i = 0; i < (this.deck.cards.length - 1)/this.players.length; i++) {
+                this.players.forEach((player) => {
+                        player.giveCard(this.deck.popCard());
+                    });
+                }
+            }
+
+
 
         dealFlop() {
             this.table.giveCard(this.deck.popCard());

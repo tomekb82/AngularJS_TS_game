@@ -30,11 +30,11 @@ module Poker {
                 data.players.forEach((player:Player, index:number) => {
                     this._game.addPlayer(new Player(index + 1, player.name));
                     player.cards.forEach((card:Card) => {
-                        this._game.players[index].giveCard(new Card(card.rank, card.suit));
+                        this._game.players[index].giveCard(new Card(card.name));
                     });
                 });
                 data.table.cards.forEach((card:Card) => {
-                    this._game.table.giveCard(new Card(card.rank, card.suit));
+                    this._game.table.giveCard(new Card(card.name));
                 });
                 angular.copy(data.results, this.results);
                 //$rootScope.$apply(); // TODO why we need this here?

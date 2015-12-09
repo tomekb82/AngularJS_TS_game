@@ -2,12 +2,12 @@ module Poker {
 
     export class Card {
 
-        constructor(public rank:string, public suit:string) {
+        constructor(public name:string) {
 
         }
 
         toString() {
-            return this.rank + this.suit;
+            return this.name;
         }
     }
 
