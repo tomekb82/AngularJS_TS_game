@@ -86,7 +86,6 @@ module Poker {
                             }
                         });
                     });
-
                     this._isOwner = true;
                     this._game.addPlayer(new Player(1, table.owner));
                     table.players.forEach((playerName, index) => this._game.addPlayer(new Player(index + 2, playerName)));
